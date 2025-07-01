@@ -1,0 +1,243 @@
+/* ProfileSetupStep4Vertical.css */
+.ps4v-root {
+  min-height: 100vh;
+  background: #f9fbfe;
+  font-family: system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.ps4v-header {
+  background: #fff;
+  padding: 24px 48px;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.ps4v-brand {
+  color: #2563eb;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.ps4v-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.ps4v-step {
+  color: #2563eb;
+  font-size: 1.05rem;
+}
+
+.ps4v-progress {
+  background: #fff;
+  margin-top: 0;
+  padding: 0;
+}
+
+.ps4v-progress-bar-container {
+  width: 100%;
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ps4v-progress-label {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #2563eb;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  align-self: center;
+}
+
+.ps4v-progress-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #e5e7eb;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.ps4v-progress-fill {
+  height: 100%;
+  background-color: #2563eb;
+  width: 44%; /* Step 4 of 9 */
+  transition: width 0.3s;
+}
+
+.ps4v-form {
+  max-width: 600px;
+  margin: 36px auto;
+  background: #fff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.ps4v-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+  display: block;
+}
+
+.ps4v-select,
+.ps4v-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  background: #f9fafb;
+  outline: none;
+}
+
+.ps4v-select:focus,
+.ps4v-input:focus {
+  border-color: #2563eb;
+}
+
+.ps4v-proficiency-row {
+  display: flex;
+  gap: 12px;
+}
+
+.ps4v-proficiency-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid #d1d5db;
+  background: #f9fafb;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+.ps4v-proficiency-btn.active,
+.ps4v-proficiency-btn:hover {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.ps4v-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ps4v-skill-btn {
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #e0ecff;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.ps4v-skill-btn:hover {
+  background: #2563eb;
+  color: white;
+}
+
+.ps4v-custom-skill {
+  display: flex;
+  gap: 10px;
+}
+
+.ps4v-add-btn {
+  background: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.ps4v-add-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.ps4v-selected {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ps4v-chip {
+  background: #e0ecff;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+.ps4v-chip-meta {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.ps4v-remove {
+  background: transparent;
+  border: none;
+  color: #ef4444;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.ps4v-empty {
+  font-style: italic;
+  color: #6b7280;
+}
+
+.ps4v-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.ps4v-btn-back {
+  background: white;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ps4v-btn-next {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ps4v-btn-next:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}

@@ -1,0 +1,427 @@
+.ps5-root {
+  min-height: 100vh;
+  background: #f7fafd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.ps5-header {
+  width: 100%;
+  max-width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 48px 0 48px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-sizing: border-box;
+  border-bottom: 1.5px solid #e5e7eb;
+}
+
+.ps5-header-left {
+  font-weight: 700;
+  color: #2563eb;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.ps5-header-center {
+  font-weight: 700;
+  color: #222;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-align: center;
+  flex: 1;
+}
+
+.ps5-header-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  min-width: 150px;
+  justify-content: flex-end;
+}
+
+.ps5-header-step-label {
+  color: #222;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.ps5-header-step-blue {
+  color: #2563eb;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.ps5-progress-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #e5e7eb;
+  border-radius: 0;
+  overflow: hidden;
+  margin: 0;
+}
+
+.ps5-progress-bar-fill {
+  height: 100%;
+  background-color: #2563eb;
+  width: 55%;
+  transition: width 0.3s;
+}
+
+.ps5-card {
+  margin: 40px auto 48px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 36px rgba(37, 99, 235, 0.09);
+  padding: 38px 42px 32px 42px;
+  display: flex;
+  flex-direction: column;
+  max-width: 540px;
+  width: 100%;
+}
+
+.ps5-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.ps5-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.ps5-add-btn-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.ps5-add-btn {
+  background-color: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.13rem;
+  border-radius: 8px;
+  border: none;
+  padding: 13px 28px;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.09);
+}
+
+.ps5-add-btn:hover {
+  background-color: #1749b1;
+}
+
+.ps5-form {
+  background: #f7fafd;
+  border-radius: 12px;
+  border: 1.5px solid #e5e7eb;
+  padding: 22px 18px 18px 18px;
+  margin-bottom: 24px;
+}
+
+.ps5-form-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ps5-form-title-icon {
+  display: flex;
+  align-items: center;
+}
+
+.ps5-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ps5-form-row {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+}
+
+.ps5-form-col {
+  flex: 1;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ps5-form-col-full {
+  flex: 2;
+  min-width: 100%;
+}
+
+.ps5-form-input,
+.ps5-form-textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #e0e7ef;
+  background: #fff;
+  font-size: 1.08rem;
+  outline: none;
+  transition: border 0.15s;
+  margin-bottom: 0;
+  resize: none;
+}
+
+.ps5-form-input:focus,
+.ps5-form-textarea:focus {
+  border-color: #2563eb;
+}
+
+.ps5-form-error {
+  border-color: #ef4444 !important;
+}
+
+.ps5-form-required {
+  color: #ef4444;
+  margin-left: 2px;
+}
+
+.ps5-form-err-msg {
+  color: #ef4444;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.ps5-form-checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 6px;
+}
+
+.ps5-form-checkbox-label {
+  font-size: 1.04rem;
+  color: #222;
+  cursor: pointer;
+  user-select: none;
+}
+
+.ps5-form-btn-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.ps5-form-cancel-btn {
+  background: #fff;
+  color: #222;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+
+.ps5-form-cancel-btn:hover {
+  background: #f3f4f6;
+}
+
+.ps5-form-add-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+
+.ps5-form-add-btn:hover {
+  background: #1749b1;
+}
+
+.ps5-exp-list {
+  margin-bottom: 28px;
+}
+
+.ps5-empty-exp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 38px 0 18px 0;
+  color: #6b7280;
+}
+
+.ps5-empty-exp-icon {
+  margin-bottom: 10px;
+}
+
+.ps5-empty-exp-title {
+  font-size: 1.12rem;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.ps5-empty-exp-desc {
+  font-size: 1.04rem;
+  color: #6b7280;
+}
+
+.ps5-exp-item {
+  background: #f7fafd;
+  border-radius: 10px;
+  border: 1.5px solid #e5e7eb;
+  padding: 16px 18px 14px 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.06);
+}
+
+.ps5-exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ps5-exp-title {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.ps5-exp-job {
+  color: #2563eb;
+}
+
+.ps5-exp-company {
+  color: #222;
+  font-weight: 600;
+}
+
+.ps5-exp-at {
+  color: #888;
+  font-weight: 400;
+}
+
+.ps5-exp-remove {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 10px;
+  line-height: 1;
+}
+
+.ps5-exp-remove:hover {
+  color: #b91c1c;
+}
+
+.ps5-exp-dates {
+  font-size: 1rem;
+  color: #2563eb;
+  margin: 3px 0 6px 0;
+  font-weight: 500;
+}
+
+.ps5-exp-desc {
+  font-size: 1.01rem;
+  color: #444;
+  margin-top: 2px;
+}
+
+.ps5-nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+  gap: 10px;
+}
+
+.ps5-nav-btn {
+  padding: 12px 32px;
+  font-size: 1.11rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s;
+  user-select: none;
+}
+
+.ps5-nav-back {
+  background-color: #fff;
+  color: #222;
+  border: 1.5px solid #e5e7eb;
+}
+
+.ps5-nav-back:hover {
+  background-color: #f3f4f6;
+}
+
+.ps5-nav-right {
+  display: flex;
+  gap: 10px;
+}
+
+.ps5-nav-skip {
+  background-color: #fff;
+  color: #2563eb;
+  border: 1.5px solid #2563eb;
+}
+
+.ps5-nav-skip:hover {
+  background-color: #e5e7eb;
+}
+
+.ps5-nav-next {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.ps5-nav-next:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.ps5-nav-next:not(:disabled):hover {
+  background-color: #1749b1;
+}
+
+@media (max-width: 700px) {
+  .ps5-header, .ps5-progress-bar {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .ps5-card {
+    padding: 20px 5vw 24px 5vw;
+    margin: 24px 0 18px 0;
+    max-width: 99vw;
+  }
+  .ps5-title {
+    font-size: 1.4rem;
+  }
+  .ps5-form-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
