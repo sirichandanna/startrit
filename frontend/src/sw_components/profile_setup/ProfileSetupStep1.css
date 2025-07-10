@@ -1,0 +1,233 @@
+/* Root container */
+.profile-setup-step1-root {
+  min-height: 100vh;
+  background: #f7fafd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.profile-setup-header {
+  width: 100%;
+  max-width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 48px 20px 48px;
+  border-bottom: 1.5px solid #e5e7eb;
+  font-size: 1.2rem;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.header-left {
+  font-weight: 700;
+  color: #2563eb;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.header-center {
+  font-weight: 600;
+  color: #222;
+  font-size: 1.1rem;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.step-label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #2563eb;
+  text-align: right;
+}
+
+/* Progress bar below header */
+.progress-bar-below-header {
+  width: 100%;
+  height: 6px;
+  background-color: #e5e7eb;
+  border-radius: 0; /* flush edges */
+  overflow: hidden;
+  margin: 0; /* no margin so it touches header */
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #2563eb;
+  width: 11%; /* Step 1 of 9 ≈ 11% */
+}
+
+/* Main content form */
+.profile-setup-content {
+  margin: 38px auto 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 36px rgba(37, 99, 235, 0.09);
+  padding: 38px 42px 32px 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 480px;
+  width: 100%;
+}
+
+/* Title */
+.profile-setup-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+/* Photo section */
+.profile-setup-photo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.profile-photo-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  border: 2.5px dashed #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 18px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border-color 0.18s;
+}
+
+.profile-photo-placeholder:hover {
+  border-color: #2563eb;
+}
+
+.profile-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Camera icon outside profile picture */
+.photo-upload-camera {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(8px, -50%);
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 6px rgba(37, 99, 235, 0.09);
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  user-select: none;
+}
+
+/* Buttons below photo */
+.profile-photo-buttons {
+  display: flex;
+  gap: 14px;
+}
+
+.photo-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 9px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+  margin-bottom: 0;
+}
+
+.photo-btn:hover {
+  background: #1749b1;
+}
+
+/* Inputs container - centered horizontally */
+.profile-setup-inputs {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  margin: 32px 0 22px 0;
+  justify-content: center;
+}
+
+/* Single input group */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  max-width: 220px;
+}
+
+.input-group label {
+  font-size: 0.98rem;
+  color: #222;
+  margin-bottom: 7px;
+  font-weight: 500;
+}
+
+.input-group input {
+  padding: 11px 14px;
+  border-radius: 6px;
+  border: 1.5px solid #e0e7ef;
+  background: #f7fafd;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.15s;
+}
+
+.input-group input:focus {
+  border-color: #2563eb;
+}
+
+/* Next button container */
+.next-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+/* Next button style */
+.next-btn {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.next-btn:hover {
+  background-color: #1749b1;
+}

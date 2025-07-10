@@ -1,0 +1,22 @@
+.freecredit-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0;
+  padding: 40px 32px;
+  box-sizing: border-box;
+}
+
+.freecredit-header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.freecredit-message {
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 24px;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 8px;
+}
